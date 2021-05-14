@@ -1,4 +1,4 @@
-module github.com/go-errors/errors
+module github.com/magna5/errors
 
 go 1.14
 

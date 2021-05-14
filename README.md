@@ -1,7 +1,6 @@
-go-errors/errors
+magna5/errors
 ================
 
-[![Build Status](https://travis-ci.org/go-errors/errors.svg?branch=master)](https://travis-ci.org/go-errors/errors)
 
 Package errors adds stacktrace support to errors in go.
 
@@ -15,14 +14,11 @@ expecting a normal error return.
 Usage
 -----
 
-Full documentation is available on
-[godoc](https://godoc.org/github.com/go-errors/errors), but here's a simple
-example:
 
 ```go
 package crashy
 
-import "github.com/go-errors/errors"
+import "github.com/magna5/errors"
 
 var Crashed = errors.Errorf("oh dear")
 
@@ -39,7 +35,7 @@ package main
 import (
     "crashy"
     "fmt"
-    "github.com/go-errors/errors"
+    "github.com/magna5/errors"
 )
 
 func main() {
@@ -70,11 +66,5 @@ This package is licensed under the MIT license, see LICENSE.MIT for details.
 * v1.1.0 updated to use go1.13's standard-library errors.Is method instead of == in errors.Is
 * v1.2.0 added `errors.As` from the standard library.
 * v1.3.0 *BREAKING* updated error methods to return `error` instead of `*Error`.
->  Code that needs access to the underlying `*Error` can use the new errors.AsError(e)
-> ```
->   // before
->   errors.New(err).ErrorStack()
->   // after
->.  errors.AsError(errors.Wrap(err)).ErrorStack()
-> ```
 * v1.4.0 *BREAKING* v1.4.0 reverted all changes from v1.3.0 and is identical to v1.2.0
+* v1.5.0 Brinking back v1.3.0 changes.
