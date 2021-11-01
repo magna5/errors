@@ -11,7 +11,7 @@
 //
 //  package crashy
 //
-//  import "github.com/magna5/errors"
+//  import "github.com/ringsq/errors"
 //
 //  var Crashed = errors.Errorf("oh dear")
 //
@@ -26,7 +26,7 @@
 //  import (
 //      "crashy"
 //      "fmt"
-//      "github.com/magna5/errors"
+//      "github.com/ringsq/errors"
 //  )
 //
 //  func main() {

@@ -1,4 +1,4 @@
-module github.com/magna5/errors
+module github.com/ringsq/errors
 
 go 1.14
 
